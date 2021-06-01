@@ -1,0 +1,16 @@
+.cmn-title {
+  text-align: center;
+  padding-top: 90px;
+  @include overTab {
+    padding-top: 130px;
+  }
+  p {
+    color: #ffbd4a;
+    padding-bottom: 15px;
+  }
+  h2 {
+    font-size: 32px;
+    padding-bottom: 40px;
+    font-weight: bolder;
+  }
+}

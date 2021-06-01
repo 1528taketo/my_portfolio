@@ -1,0 +1,23 @@
+.menu_wrapper {
+  font-family: "Noto Serif JP", serif;
+  .menu {
+    z-index: 5;
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    left: -400px;
+    background-color: #fff9e6;
+    transition: all 0.3s;
+    li {
+      padding-left: 15px;
+      padding-top: 7px;
+      padding-bottom: 7px;
+    }
+    .contact-btn-menu {
+      background-color: #febd4a;
+    }
+  }
+}
+.click .menu {
+  left: 0px;
+}

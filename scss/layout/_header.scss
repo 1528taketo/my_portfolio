@@ -1,0 +1,85 @@
+.header {
+  font-family: "Noto Serif JP", serif;
+  height: 75px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: white;
+  width: 100%;
+  .ham {
+    margin-top: 11px;
+    position: relative;
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+    margin-left: auto;
+    @include overTab {
+      display: none;
+    }
+    .ham_line {
+      position: absolute;
+      left: 10px;
+      width: 35px;
+      height: 2px;
+      background-color: #333333;
+      transition: all 0.3s;
+    }
+    .ham_line1 {
+      top: 10px;
+    }
+    .ham_line2 {
+      top: 22px;
+    }
+    .ham_line3 {
+      top: 34px;
+    }
+  }
+  .clicked .ham_line1 {
+    transform: rotate(45deg);
+    top: 20px;
+  }
+  .clicked .ham_line2 {
+    width: 0px;
+  }
+  .clicked .ham_line3 {
+    transform: rotate(-45deg);
+    top: 20px;
+  }
+  .nav {
+    height: 100%;
+    display: none;
+    @include overTab {
+      display: block;
+    }
+    .nav-list {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      .nav-item {
+        font-size: 20px;
+        + .nav-item {
+          padding-left: 30px;
+        }
+        &:hover a {
+          color: #ffc06e;
+        }
+      }
+      .contact-btn {
+        padding-right: 50px;
+        padding-left: 30px;
+        a {
+          color: #000;
+          padding: 10px 30px;
+          border: 2px solid #000;
+          border-radius: 10px;
+        }
+        &:hover a {
+          background-color: #000;
+          color: #fff;
+        }
+      }
+    }
+  }
+}

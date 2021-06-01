@@ -1,0 +1,60 @@
+.process {
+  font-family: "Noto Serif JP", serif;
+  .process-content {
+    padding-left: 20px;
+    padding-right: 20px;
+    @include overTab {
+      padding-left: 150px;
+      padding-right: 0;
+    }
+    .process-list {
+      .process-item {
+        display: flex;
+        + .process-item {
+          margin-top: 50px;
+        }
+        .description {
+          padding-bottom: 7px;
+          @include overTab {
+            padding-bottom: 0;
+          }
+        }
+        span {
+          padding-top: 18px;
+          padding-right: 10px;
+          font-family: "Meiryo";
+          color: #999;
+          @include overTab {
+            padding-right: 20px;
+          }
+        }
+        h3 {
+          background-color: #febd4a;
+          color: #fff;
+          margin-right: 10px;
+          padding-top: 10px;
+          padding-bottom: 15px;
+          padding-right: 15px;
+          padding-left: 15px;
+          width: 10px;
+          height: 16px;
+          @include overTab {
+            padding-right: 20px;
+            padding-left: 20px;
+            padding-top: 15px;
+            padding-bottom: 18px;
+            margin-right: 20px;
+          }
+        }
+        .process-text {
+          .process-title {
+            font-size: 20px;
+            padding-bottom: 20px;
+            padding-top: 20px;
+            font-weight: bolder;
+          }
+        }
+      }
+    }
+  }
+}

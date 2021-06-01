@@ -1,0 +1,55 @@
+.last-contact {
+  background-image: url(../image/last.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  margin-top: 90px;
+  @include overTab {
+    margin-top: 150px;
+  }
+  .last-contact-wrap {
+    padding-top: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    @include overTab {
+      padding-left: 60px;
+      padding-right: 0;
+    }
+    .cmn-text {
+      color: #fff;
+      font-size: 35px;
+      @include overTab {
+        font-size: 50px;
+      }
+    }
+    .first {
+      padding-bottom: 40px;
+    }
+    .second {
+      padding-bottom: 85px;
+    }
+    a {
+      color: #fff;
+      background-color: #000;
+      border-radius: 100px;
+      padding: 10px 28px;
+      font-size: 16px;
+      &:hover {
+        background-color: #fff;
+        color: #000;
+      }
+      @include overTab {
+        padding: 20px 40px;
+        font-size: 30px;
+      }
+      @include modile {
+        padding: 15px 30px;
+        font-size: 18px;
+      }
+      @include garaxy-fold {
+        padding: 10px 25px;
+        font-size: 13px;
+      }
+    }
+  }
+}

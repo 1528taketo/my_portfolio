@@ -1,0 +1,23 @@
+@mixin overTab {
+  @media print, screen and (min-width: 1025px) {
+    @content;
+  }
+}
+
+@mixin ipad {
+  @media print, screen and (min-width: 769px) {
+    @content;
+  }
+}
+
+@mixin modile {
+  @media print, screen and (max-width: 400px) {
+    @content;
+  }
+}
+
+@mixin garaxy-fold {
+  @media print, screen and (max-width: 281px) {
+    @content;
+  }
+}

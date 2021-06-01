@@ -1,0 +1,56 @@
+.service {
+  font-family: "Noto Serif JP", serif;
+  .service-list {
+    @include ipad {
+      display: flex;
+      padding: 0 50px;
+    }
+  }
+  .service-item {
+    margin: 0 20px 30px;
+    border-bottom: 1px solid #999;
+    @include overTab {
+      box-shadow: 4px 4px 10px;
+      width: 33%;
+      margin: 0;
+    }
+    @include ipad {
+      box-shadow: 4px 4px 10px;
+      width: 33%;
+      margin: 0;
+    }
+    &:nth-child(2) {
+      @include overTab {
+        margin: 0 50px;
+      }
+      @include ipad {
+        margin: 0 20px;
+      }
+    }
+    img {
+      width: 100%;
+      @include overTab {
+        height: 50%;
+      }
+    }
+    &:hover {
+      @include overTab {
+        box-shadow: 6px 6px 12px;
+      }
+    }
+    .service-text {
+      padding-bottom: 45px;
+      h3 {
+        text-align: center;
+        font-weight: bold;
+        padding: 30px 0;
+      }
+      p {
+        padding: 0 25px;
+        + p {
+          padding-top: 15px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,69 @@
+.top {
+  font-family: "Noto Serif JP", serif;
+  background-image: url(../image/test-3.jpg);
+  background-size: cover;
+  background-position: center;
+  font-size: 30px;
+  margin-top: 75px;
+  height: 400px;
+  padding-top: 80px;
+  @include overTab {
+    padding-top: 100px;
+    height: 674px;
+  }
+  /*
+  .sub-title {
+    font-family: "Josefin Sans";
+    color: white;
+    padding: 35px 0;
+    text-align: center;
+    font-size: 40px;
+  }
+  */
+  .top-content {
+    height: 75%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 0 30px;
+    @include overTab {
+      margin: 0 60px;
+      padding-left: 100px;
+      padding-right: 0;
+    }
+    .top-heading-box {
+      padding-top: 30px;
+      padding-bottom: 40px;
+      @include overTab {
+        padding: 70px 0;
+      }
+      @include modile {
+        padding-top: 15px;
+        padding-bottom: 15px;
+      }
+      h2 {
+        font-size: 40px;
+        @include overTab {
+          font-size: 60px;
+        }
+        @include modile {
+          padding-bottom: 15px;
+          font-size: 25px;
+        }
+        &:nth-child(1) {
+          @include overTab {
+            padding-bottom: 30px;
+          }
+        }
+      }
+    }
+    p {
+      font-size: 16px;
+      @include overTab {
+        font-size: 25px;
+      }
+      + p {
+        padding-top: 30px;
+      }
+    }
+  }
+}

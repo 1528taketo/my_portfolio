@@ -1,0 +1,72 @@
+.price {
+  font-family: "Noto Serif JP", serif;
+  .price-content {
+    padding: 0 20px;
+    @include overTab {
+      border: 1px solid #eeeeee;
+      margin: 0 auto;
+      width: 66%;
+      display: flex;
+      padding: 0;
+      margin-bottom: 40px;
+    }
+    .price-list {
+      @include overTab {
+        width: 50%;
+      }
+      .price-item {
+        border: 1px solid #eeeeee;
+        text-align: center;
+        padding: 20px 0;
+        .price-titel {
+          font-size: 20px;
+          font-weight: 700;
+        }
+        .price {
+          font-size: 24px;
+          font-weight: 700;
+          padding-top: 10px;
+          padding-bottom: 25px;
+        }
+        .sub {
+          color: #999;
+          padding: 0 5px;
+        }
+      }
+    }
+    .price-list-second {
+      margin-top: 30px;
+      @include overTab {
+        margin-top: 0px;
+      }
+    }
+  }
+  .precautions {
+    background-color: #fff9e6;
+    padding: 0.5em 1em;
+    color: #232323;
+    border-left: solid 10px #ffc06e;
+    margin: 50px 20px 0;
+    @include overTab {
+      margin: 0 auto;
+      width: 58%;
+    }
+    .precautions-content {
+      margin-left: 20px;
+      padding-bottom: 20px;
+      @include overTab {
+        padding-top: 30px;
+        padding-left: 30px;
+        padding-bottom: 30px;
+        margin-left: 0;
+      }
+      p {
+        padding-top: 10px;
+        &:nth-child(1) {
+          font-weight: bolder;
+          padding-bottom: 30px;
+        }
+      }
+    }
+  }
+}
